@@ -1,0 +1,80 @@
+[
+  {
+    "core": 28,
+    "candidate": "core28-fastcommonrayf6e5ba2e5d",
+    "challenge_id": "lean-4-verification-rh-fast-sub-pillar-28-fundamen-7b3737ce",
+    "attempt": 102646,
+    "tokens": 327100,
+    "baseline_tokens": 920317,
+    "chars": 1061239,
+    "files": 154,
+    "baseline_chars": 2996580,
+    "worker_size": 941576,
+    "worker_sha": "fdae3253fad351b93afa686df4dc6cf1881a81c4f5fa4764af5f6a5fc6a1b16e",
+    "platform_size": 484591,
+    "platform_sha": "66d3c13312b784800145b32cb0cce3261c44e4033ab8a29b4d4b7ff389bef07e",
+    "proof_id": "70a0138f72a48dc1489366170cb1c734eb73d417b04991f3d15e6eaeda117bbc",
+    "cipher_sha": "a3bd34f0180e16d47f19d4ea5367c7dcfa23d4acc230c97d4b86f64fbd7ab624",
+    "filename": "input.enc",
+    "harbor_witnesses": [
+      {
+        "attempt": 102510,
+        "files": 217,
+        "chars": 1539511
+      },
+      {
+        "attempt": 102537,
+        "files": 173,
+        "chars": 1248557
+      },
+      {
+        "attempt": 102646,
+        "files": 154,
+        "chars": 1061239
+      },
+      {
+        "attempt": 102624,
+        "files": 154,
+        "chars": 1067846
+      },
+      {
+        "attempt": 102563,
+        "files": 170,
+        "chars": 1215607
+      },
+      {
+        "attempt": 102529,
+        "files": 173,
+        "chars": 1281186
+      },
+      {
+        "attempt": 102602,
+        "files": 161,
+        "chars": 1095802
+      },
+      {
+        "attempt": 102547,
+        "files": 170,
+        "chars": 1228282
+      },
+      {
+        "attempt": 102579,
+        "files": 170,
+        "chars": 1193405
+      },
+      {
+        "attempt": 102518,
+        "files": 176,
+        "chars": 1313742
+      },
+      {
+        "attempt": 102588,
+        "files": 165,
+        "chars": 1130736
+      }
+    ],
+    "grader_routing_version": 1,
+    "prior_native_publish_unresolved": false,
+    "prior_arm_publish_unresolved": false
+  }
+]
