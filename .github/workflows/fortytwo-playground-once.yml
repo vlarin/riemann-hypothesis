@@ -1,0 +1,32 @@
+name: Deliver verified Playground proofs with progress-based timeouts
+on:
+  push:
+    branches:
+      - dev/fortytwo-proof-102549-90a83baf4bfbbede3cd0
+permissions: {}
+jobs:
+  deliver:
+    if: github.repository == 'vlarin/riemann-hypothesis' && github.run_attempt == 1
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    environment: fortytwo-proof-102549-90a83baf4bfbbede3cd0
+    steps:
+      - name: Fetch the reviewed uploader at this commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP"
+          root="https://raw.githubusercontent.com/vlarin/riemann-hypothesis/$GITHUB_SHA/.github/fortytwo-delivery"
+          curl -fsS --proto '=https' --retry 5 --retry-all-errors "$root/run.py" -o run.py
+          echo '2a1dc1d0de1dd44ced95b02c22645aba89e9115722018bd3c78695523995af0c  run.py' | sha256sum -c
+          curl -fsS --proto '=https' --retry 5 --retry-all-errors "$root/deliver.py" -o deliver.py
+          echo '904961026193b04c1244aff3cf6d2a88c108dff1ded63d243dd14d52c16432ae  deliver.py' | sha256sum -c
+          curl -fsS --proto '=https' --retry 5 --retry-all-errors "$root/live_board.py" -o live_board.py
+          echo '9d163180216df477c1c404f9e541392e1eb16b103dfc39936dc88447686da79b  live_board.py' | sha256sum -c
+          curl -fsS --proto '=https' --retry 5 --retry-all-errors "$root/catalog.json" -o catalog.json
+          echo '1fdb916171e326c24718955183a49e9cc6bfee75f71b8470c173b7512eba10e5  catalog.json' | sha256sum -c
+      - name: Check leaderboard and deliver verified proofs
+        shell: bash
+        env:
+          PLAYGROUND_RUN_INPUT: ${{ secrets.PLAYGROUND_RUN_INPUT }}
+        run: python3 -I "$RUNNER_TEMP/deliver.py" "$RUNNER_TEMP/catalog.json"
