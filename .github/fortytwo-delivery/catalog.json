@@ -1,0 +1,30 @@
+[
+  {
+    "core": 41,
+    "candidate": "core41-faste7d85fabeb",
+    "challenge_id": "lean-4-verification-rh-fast-sub-pillar-41-siegel-l-b778aa67",
+    "attempt": 102556,
+    "tokens": 2955155,
+    "baseline_tokens": 3282020,
+    "chars": 9494540,
+    "files": 970,
+    "baseline_chars": 10525462,
+    "worker_size": 7169643,
+    "worker_sha": "73e9f1b9387bc92bfcadeb0056e97750e0c1aebb1ffd731f59994c490a7909db",
+    "platform_size": 3508773,
+    "platform_sha": "4820a34aa432d0bc77b4e56d7a55d48ece4133ade0b65e0770df93521491db11",
+    "proof_id": "f036fc95469195b59c64e16a0ccd46429b0317dcdcd12bcf4081f653f9110ff5",
+    "cipher_sha": "41f6c9d122fe4e050dd521b9ca5bc036ffd46b8d14e54b2b7d8ae8caf5d2baef",
+    "filename": "input.enc",
+    "harbor_witnesses": [
+      {
+        "attempt": 102556,
+        "files": 970,
+        "chars": 9494540
+      }
+    ],
+    "grader_routing_version": 1,
+    "prior_native_publish_unresolved": false,
+    "prior_arm_publish_unresolved": false
+  }
+]
