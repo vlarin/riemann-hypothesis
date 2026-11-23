@@ -1,0 +1,35 @@
+[
+  {
+    "core": 26,
+    "candidate": "core26-fastslice5df97e20b5",
+    "challenge_id": "lean-4-verification-rh-fast-sub-pillar-26-finite-a-74f8b9d6",
+    "attempt": 102515,
+    "tokens": 366542,
+    "baseline_tokens": 540118,
+    "chars": 1399631,
+    "files": 242,
+    "baseline_chars": 2099205,
+    "worker_size": 1085310,
+    "worker_sha": "96acb2589ad2e227433c07dab98da77aadbf8708f1959ea0488180446d9d8940",
+    "platform_size": 545109,
+    "platform_sha": "49b2d1d1009670368d8f27ca80b98057485e4996782422db4f9dfa4e3bc78c6d",
+    "proof_id": "ee3dd15e15d3cc44e9f7eedb3812bf0046443a0ce21d26eb01014c2ca78f7d1c",
+    "cipher_sha": "9b4d74cfeaec0f78969c2cc11444427d2022155a18bc5f803e05fb32cfeb908a",
+    "filename": "input.enc",
+    "harbor_witnesses": [
+      {
+        "attempt": 102515,
+        "files": 242,
+        "chars": 1399631
+      },
+      {
+        "attempt": 102256,
+        "files": 323,
+        "chars": 2032816
+      }
+    ],
+    "grader_routing_version": 1,
+    "prior_native_publish_unresolved": false,
+    "prior_arm_publish_unresolved": false
+  }
+]
