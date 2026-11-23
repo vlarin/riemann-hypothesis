@@ -1,0 +1,20 @@
+[
+  {
+    "core": 18,
+    "candidate": "core18-prune01",
+    "challenge_id": "lean-4-verification-rh-core-pillar-18-definite-uni-dc50cb98",
+    "attempt": 101442,
+    "tokens": 74343508,
+    "baseline_tokens": 75331745,
+    "chars": 247721247,
+    "files": 33702,
+    "baseline_chars": 251168059,
+    "worker_size": 175194705,
+    "worker_sha": "a21472ef4d683945b5d6d1401206bd46507de8b11a28184bb18bbf0495d2879f",
+    "platform_size": 87568006,
+    "platform_sha": "5138ada8f14d65a9ce81f5a94af3cab8b7ff8d59b99fa2eded8ab0b2b5634c08",
+    "proof_id": "c9f287fc1cb7209fa9987ff1e0366ab36da3f4cb9ed6ca018f8fd737a34da9fd",
+    "cipher_sha": "6628ce24d341549899ac55eab989b6a807abff4cb6aef6a8ff6db6ccf1b3267a",
+    "filename": "input.enc"
+  }
+]
