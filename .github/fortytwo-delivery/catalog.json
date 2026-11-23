@@ -1,0 +1,60 @@
+[
+  {
+    "core": 28,
+    "candidate": "core28-fastdecl6416c0169c",
+    "challenge_id": "lean-4-verification-rh-fast-sub-pillar-28-fundamen-7b3737ce",
+    "attempt": 102579,
+    "tokens": 369229,
+    "baseline_tokens": 920317,
+    "chars": 1193405,
+    "files": 170,
+    "baseline_chars": 2996580,
+    "worker_size": 1030563,
+    "worker_sha": "5161459fe90a7b9363cf327b31996e0eca17807bb9f4d0f7157f162dfa1348bf",
+    "platform_size": 530644,
+    "platform_sha": "e7806614ed2d08e7dcf0bc3af793ca312770c54b988e4f694c75e76dd6a183c7",
+    "proof_id": "cd804ef79ffdef4b030fc913bfa2d404146f31cd627fbd0fb56978c66b890d8c",
+    "cipher_sha": "5a7ca8751ac61466d5d4cc65f477a1ea8a26829ae3c7316a089202a7c815980b",
+    "filename": "input.enc",
+    "harbor_witnesses": [
+      {
+        "attempt": 102510,
+        "files": 217,
+        "chars": 1539511
+      },
+      {
+        "attempt": 102537,
+        "files": 173,
+        "chars": 1248557
+      },
+      {
+        "attempt": 102563,
+        "files": 170,
+        "chars": 1215607
+      },
+      {
+        "attempt": 102529,
+        "files": 173,
+        "chars": 1281186
+      },
+      {
+        "attempt": 102547,
+        "files": 170,
+        "chars": 1228282
+      },
+      {
+        "attempt": 102579,
+        "files": 170,
+        "chars": 1193405
+      },
+      {
+        "attempt": 102518,
+        "files": 176,
+        "chars": 1313742
+      }
+    ],
+    "grader_routing_version": 1,
+    "prior_native_publish_unresolved": false,
+    "prior_arm_publish_unresolved": false
+  }
+]
