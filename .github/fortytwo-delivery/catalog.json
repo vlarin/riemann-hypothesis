@@ -1,0 +1,35 @@
+[
+  {
+    "core": 23,
+    "candidate": "core23-covnorm29d6c7",
+    "challenge_id": "lean-4-verification-rh-core-pillar-23-arithmetic-h-3025a41d",
+    "attempt": 102217,
+    "tokens": 23408674,
+    "baseline_tokens": 47617266,
+    "chars": 78422760,
+    "files": 10958,
+    "baseline_chars": 156858585,
+    "worker_size": 58233492,
+    "worker_sha": "1b4aced0734b1a6168e41af2d24a8ee9e8ddb0c7db3a9fa0970be2d29154afaf",
+    "platform_size": 29112825,
+    "platform_sha": "3bd0a94da65eb23eda7a08cf482ba7e532678f7805886393020e416519eb76f3",
+    "proof_id": "7f140ae8ae56063801bb5da82b263854031ba08e0400595c99697932b311c7b4",
+    "cipher_sha": "583924354b51e9fbf39a2ff1043225bbf63ec81e6a8990eb343fdde06c9678d0",
+    "filename": "input.enc",
+    "harbor_witnesses": [
+      {
+        "attempt": 101049,
+        "files": 11827,
+        "chars": 85278666
+      },
+      {
+        "attempt": 102217,
+        "files": 10958,
+        "chars": 78422760
+      }
+    ],
+    "grader_routing_version": 1,
+    "prior_native_publish_unresolved": false,
+    "prior_arm_publish_unresolved": false
+  }
+]
