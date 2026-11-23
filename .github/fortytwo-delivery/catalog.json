@@ -1,0 +1,35 @@
+[
+  {
+    "core": 29,
+    "candidate": "core29-fastslice93f86da27f",
+    "challenge_id": "lean-4-verification-rh-fast-sub-pillar-29-hecke-pa-a6eb1336",
+    "attempt": 102400,
+    "tokens": 341451,
+    "baseline_tokens": 831319,
+    "chars": 1350503,
+    "files": 122,
+    "baseline_chars": 3351398,
+    "worker_size": 896261,
+    "worker_sha": "91c5bbb61eb33f1f3c49d8736de97b1b9a9c71a763eca2ae1064358574334df5",
+    "platform_size": 449574,
+    "platform_sha": "16e8b3151a777bd0e870bf648eaf1b0c15db8df248c2f6c1715f8e3620cdf4ea",
+    "proof_id": "d754f2144e6f634d5a5e2d7ac397e9435497fda3347cbab000d3eed6bd700cbd",
+    "cipher_sha": "ba6c26ce52b994260781f3d8cab26ed6dfc4415e8f122dbb7814d0806c767f1a",
+    "filename": "input.enc",
+    "harbor_witnesses": [
+      {
+        "attempt": 102400,
+        "files": 122,
+        "chars": 1350503
+      },
+      {
+        "attempt": 102277,
+        "files": 320,
+        "chars": 3322849
+      }
+    ],
+    "grader_routing_version": 1,
+    "prior_native_publish_unresolved": false,
+    "prior_arm_publish_unresolved": false
+  }
+]
