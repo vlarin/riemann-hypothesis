@@ -1,0 +1,65 @@
+[
+  {
+    "core": 28,
+    "candidate": "core28-fastbounded30710a49fa",
+    "challenge_id": "lean-4-verification-rh-fast-sub-pillar-28-fundamen-7b3737ce",
+    "attempt": 102588,
+    "tokens": 348678,
+    "baseline_tokens": 920317,
+    "chars": 1130736,
+    "files": 165,
+    "baseline_chars": 2996580,
+    "worker_size": 994260,
+    "worker_sha": "970efc74f1d17e3264ffbe27b38652528721859c0143efa449ce40dd0cb88913",
+    "platform_size": 511705,
+    "platform_sha": "664a8b7f0d10d85813b9fcff7d20a3738011b9659ab88c9777f54b57ecee7e18",
+    "proof_id": "f6edf9cbf6fa9776360ac1c736d13f6360c86393b78363684a00737e17e09faf",
+    "cipher_sha": "1d06747af61d2c798ce83f067e141e3bb3a5a97ecc466efb88eb6bc9ac81f708",
+    "filename": "input.enc",
+    "harbor_witnesses": [
+      {
+        "attempt": 102510,
+        "files": 217,
+        "chars": 1539511
+      },
+      {
+        "attempt": 102537,
+        "files": 173,
+        "chars": 1248557
+      },
+      {
+        "attempt": 102563,
+        "files": 170,
+        "chars": 1215607
+      },
+      {
+        "attempt": 102529,
+        "files": 173,
+        "chars": 1281186
+      },
+      {
+        "attempt": 102547,
+        "files": 170,
+        "chars": 1228282
+      },
+      {
+        "attempt": 102579,
+        "files": 170,
+        "chars": 1193405
+      },
+      {
+        "attempt": 102518,
+        "files": 176,
+        "chars": 1313742
+      },
+      {
+        "attempt": 102588,
+        "files": 165,
+        "chars": 1130736
+      }
+    ],
+    "grader_routing_version": 1,
+    "prior_native_publish_unresolved": false,
+    "prior_arm_publish_unresolved": false
+  }
+]
