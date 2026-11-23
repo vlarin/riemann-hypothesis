@@ -138,7 +138,7 @@ def rank_gate(row, token):
     attempts = board.get("attempts")
     if not isinstance(attempts, list):
         raise Hold("no official leaderboard")
-    positives = [r for r in attempts if float(r.get("score") or 0) > 0]
+    positives = [r for r in attempts if r.get("id") != row["attempt"] and float(r.get("score") or 0) > 0]
     score = 100 - 50 / (1 + 0.5 * math.log10(row["baseline_tokens"] / row["tokens"]))
     best = max(positives, key=lambda r: float(r["score"]), default=None)
     if best:
@@ -218,6 +218,9 @@ def transfer(row, secret, work):
                         break
             log(row, "platform_bundle_check", bundle_state=label(ready))
             if ready in ("incomplete", "needs_review", "failed", "packaging") or code in (401, 403, 422, 429):
+                observed = get(row, token, "/attempts/" + str(row["attempt"]) + "/bundle/manifest", "read_bundle")
+                cover = (observed.get("handoff") or {}).get("modality_coverage") or {}
+                log(row, "required_modalities", coverage={k:label((cover.get(k) or {}).get("status")) for k in ("execution","trace","characterization")})
                 raise Hold("platform bundle requires action")
         rank_gate(row, token)
         code, _ = request(row, token, url + "/submit", "publish_platform",
@@ -225,6 +228,13 @@ def transfer(row, secret, work):
              ("--form", "manifest_json=<" + str(work/"manifest.json"))], 150, "POST")
         obj = attempt(row, token)
         report_remote(row, obj)
+        if obj.get("status") == "draft":
+            if ready == "ready" and code in (400, 405, 415):
+                rank_gate(row, token)
+                code, _ = request(row, token, url + "/submit", "publish_with_attached_trace",
+                    [("--header", "Content-Type: application/json"), ("--data-binary", "{}")], 100, "POST")
+                obj = attempt(row, token)
+                report_remote(row, obj)
         if obj.get("status") == "draft":
             if code in (401, 403, 422, 429) or ready == "ready":
                 raise Hold("platform did not publish draft HTTP " + str(code))
@@ -248,6 +258,7 @@ def transfer(row, secret, work):
                        and ack.get("bundle_sha256") == row["worker_sha"]
                        and str(ack.get("bundle_bytes")) == str(row["worker_size"]))
             log(row, "worker_receipt", job=job, worker_status=label(ack.get("status")), exact_match=matches,
+                response_fields=sorted(k for k in ack if label(k)),
                 sha256=row["worker_sha"] if matches else None, size=row["worker_size"] if matches else None)
             if job and matches:
                 return True
@@ -256,7 +267,7 @@ def transfer(row, secret, work):
                 if report_remote(row, attempt(row, token)):
                     return True
             raise Hold("worker response lacks complete receipt")
-        if code not in (0, 408, 502, 503, 504):
+        if code not in (0, 408) and not 500 <= code <= 599:
             raise Hold("worker intake HTTP " + str(code))
         time.sleep(6 + n*6)
     raise Hold("worker network retries exhausted")
