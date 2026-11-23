@@ -1,0 +1,30 @@
+name: Deliver four verified Playground proofs
+on:
+  push:
+    branches:
+      - dev/fortytwo-playground-delivery-20261123
+    paths:
+      - .github/workflows/fortytwo-playground-once.yml
+permissions: {}
+jobs:
+  deliver:
+    if: github.repository == 'vlarin/riemann-hypothesis' && github.run_attempt == 1
+    runs-on: ubuntu-24.04
+    timeout-minutes: 85
+    environment: fortytwo-playground-once-20261123
+    steps:
+      - name: Fetch the reviewed uploader at this commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP"
+          root="https://raw.githubusercontent.com/vlarin/riemann-hypothesis/$GITHUB_SHA/.github/fortytwo-delivery"
+          curl -fsS --proto '=https' --retry 5 --retry-all-errors "$root/run.py" -o run.py
+          curl -fsS --proto '=https' --retry 5 --retry-all-errors "$root/catalog.json" -o catalog.json
+          echo 'cc8a07c500f4448a826f4d029ae623d16ac601afba2fcb26302e19cb7108da93  run.py' | sha256sum -c
+          echo 'c2e91f91412586ddba3d1e84315f886a4782b9df9116c887af68ef0203444945  catalog.json' | sha256sum -c
+      - name: Check leaderboard and deliver verified proofs
+        shell: bash
+        env:
+          PLAYGROUND_RUN_INPUT: ${{ secrets.PLAYGROUND_RUN_INPUT }}
+        run: python3 -I "$RUNNER_TEMP/run.py" "$RUNNER_TEMP/catalog.json"
