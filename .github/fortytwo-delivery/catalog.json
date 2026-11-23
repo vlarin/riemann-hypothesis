@@ -1,0 +1,20 @@
+[
+  {
+    "core": 17,
+    "candidate": "core17-inline01",
+    "challenge_id": "lean-4-verification-rh-core-pillar-17-automorphy-w-df91cf1c",
+    "attempt": 101440,
+    "tokens": 48885898,
+    "baseline_tokens": 48886000,
+    "chars": 169324891,
+    "files": 30501,
+    "baseline_chars": 169325914,
+    "worker_size": 134874425,
+    "worker_sha": "dffbe0e38f64f4a0a762b97c6d053cf2bf163a440f977b1d162b3163286ebfb4",
+    "platform_size": 67422295,
+    "platform_sha": "59a4e9ed96472bc7bf4c0e067c994851b11aeecb1f768f83ba3021749b1c4281",
+    "proof_id": "05ff6f3ae0ce9ef64ca263f25a0535b3fb3a0d758185db4ecc57b271a6e3b480",
+    "cipher_sha": "f895687394f1853a2ac7d96baf75c01f291426d5926d82327e0fb0d87c65af4f",
+    "filename": "input.enc"
+  }
+]
