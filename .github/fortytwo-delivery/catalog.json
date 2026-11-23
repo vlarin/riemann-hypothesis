@@ -1,0 +1,45 @@
+[
+  {
+    "core": 29,
+    "candidate": "core29-fastslice3e43c836cf",
+    "challenge_id": "lean-4-verification-rh-fast-sub-pillar-29-hecke-pa-a6eb1336",
+    "attempt": 102595,
+    "tokens": 178722,
+    "baseline_tokens": 831319,
+    "chars": 737538,
+    "files": 82,
+    "baseline_chars": 3351398,
+    "worker_size": 541947,
+    "worker_sha": "cf7376712ea346cd314c72210e6c114ee0169d216663c03d88a16f21661e7d89",
+    "platform_size": 272356,
+    "platform_sha": "77191f72635fd73739d36fd2a92c9573e662a610036ce5bd389f19cd42a0b8b3",
+    "proof_id": "69d6a907b39c66520946b5d3dc902c5a6d1fce0daff6801755a4b4f71f9257dc",
+    "cipher_sha": "f22373086ef23310204ae70e2ba58cdd842a0dac8dad82fe77482721a2544dd7",
+    "filename": "input.enc",
+    "harbor_witnesses": [
+      {
+        "attempt": 102400,
+        "files": 122,
+        "chars": 1350503
+      },
+      {
+        "attempt": 102558,
+        "files": 84,
+        "chars": 763507
+      },
+      {
+        "attempt": 102277,
+        "files": 320,
+        "chars": 3322849
+      },
+      {
+        "attempt": 102595,
+        "files": 82,
+        "chars": 737538
+      }
+    ],
+    "grader_routing_version": 1,
+    "prior_native_publish_unresolved": false,
+    "prior_arm_publish_unresolved": false
+  }
+]
