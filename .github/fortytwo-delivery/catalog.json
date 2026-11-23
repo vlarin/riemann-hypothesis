@@ -1,0 +1,30 @@
+[
+  {
+    "core": 22,
+    "candidate": "core22-prune02",
+    "challenge_id": "lean-4-verification-rh-core-pillar-22-toroidal-com-97f2f261",
+    "attempt": 102323,
+    "tokens": 38806732,
+    "baseline_tokens": 38808445,
+    "chars": 131215661,
+    "files": 20228,
+    "baseline_chars": 131223241,
+    "worker_size": 100021620,
+    "worker_sha": "ef54ae5c167a5dd73fe711cf6c18ec645d9decf737be3044c8b0668e8524a342",
+    "platform_size": 50097272,
+    "platform_sha": "8102d77ffbe61b3830316012ce6c48d6c62238861a2e0fc27fccb83a573145f4",
+    "proof_id": "5ffba19d3008c0144c534706783b344e69d18a7b836b799fc56a91300d323ebc",
+    "cipher_sha": "444faf251b8328c60c7c9848e3441e83cc9599ad849e3b9dec2211b22d461b03",
+    "filename": "input.enc",
+    "harbor_witnesses": [
+      {
+        "attempt": 102323,
+        "files": 20228,
+        "chars": 131215661
+      }
+    ],
+    "grader_routing_version": 1,
+    "prior_native_publish_unresolved": false,
+    "prior_arm_publish_unresolved": false
+  }
+]
