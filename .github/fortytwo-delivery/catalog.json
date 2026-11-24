@@ -1,0 +1,22 @@
+[
+  {
+    "core": 15,
+    "candidate": "core15-prune02",
+    "challenge_id": "lean-4-verification-rh-core-pillar-15-arithmetic-c-5002655d",
+    "attempt": 104422,
+    "tokens": 47870200,
+    "baseline_tokens": 60808488,
+    "chars": 168759355,
+    "files": 28473,
+    "baseline_chars": 211322952,
+    "worker_size": 129292118,
+    "worker_sha": "63980e8d275cc41f8b8fff4a073824b1649e7f49369b22ab85966d69c7bedfec",
+    "platform_size": 64662509,
+    "platform_sha": "b4b3f1509d2f01687b7e0596c352dd2fdfb5196eab44938ea06ca4c84ddbec34",
+    "proof_id": "1d2c86838c7f8af7f0f58481a622d3a298139583b3f605608d06953773baa294",
+    "cipher_sha": "ce9f69c9778c6e986c36d6663f68742cd6ea80a96ecf8ec85be022de8a75cdca",
+    "filename": "input.enc",
+    "prior_native_confirmed": true,
+    "manual_dispatch_version": 1
+  }
+]
