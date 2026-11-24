@@ -1,0 +1,23 @@
+[
+  {
+    "core": "main",
+    "candidate": "main-direct-be16a8758e74",
+    "challenge_id": "lean-4-verification-riemann-hypothesis-levent-alpo-78ee076d",
+    "attempt": 105797,
+    "chars": 934089447,
+    "files": 165111,
+    "baseline_chars": 980408459,
+    "worker_size": 368090219,
+    "worker_sha": "06432afa0b6851ce0287b25cf6d1a7ef5d48f12aaca3fdb14d565b3b91a972e2",
+    "platform_size": 368090219,
+    "platform_sha": "06432afa0b6851ce0287b25cf6d1a7ef5d48f12aaca3fdb14d565b3b91a972e2",
+    "proof_id": "be16a8758e7466577694c7cd6958fc59a8d7ec4fce832d8c4ed1d118998f735c",
+    "cipher_sha": "0757f5c1b0ff5b741b4f64117ce2bdd1caa54de183877ef3d2032f84b3289267",
+    "filename": "input.enc",
+    "prior_native_confirmed": false,
+    "manual_dispatch_version": 1,
+    "main_hosted_verification": true,
+    "trace_body_sha": "71f28648f6eaa89d91299e3c859a10041b0fa46565a1e6061ab12b3c33d3ec4d",
+    "trace_manifest_sha": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  }
+]
