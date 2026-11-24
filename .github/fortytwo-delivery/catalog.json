@@ -1,0 +1,22 @@
+[
+  {
+    "core": 16,
+    "candidate": "core16-fiveheadersb670f7c299a7",
+    "challenge_id": "lean-4-verification-rh-core-pillar-16-local-global-2655280b",
+    "attempt": 105869,
+    "tokens": 99469581,
+    "baseline_tokens": 114315578,
+    "chars": 338750287,
+    "files": 56103,
+    "baseline_chars": 387383494,
+    "worker_size": 130548499,
+    "worker_sha": "cca67e3c28f9c3d3c4e2f93bc04e060fbbb16fe589a99eda6e69763df9e472da",
+    "platform_size": 130548499,
+    "platform_sha": "cca67e3c28f9c3d3c4e2f93bc04e060fbbb16fe589a99eda6e69763df9e472da",
+    "proof_id": "b670f7c299a7c74966e848aaa6c59887d49e4d946e90e60c8e37a14497086d9a",
+    "cipher_sha": "5682f4fee7b5836b41dcc68977c33a81b3ea7fead02141a6eb94aa7b09234ca4",
+    "filename": "input.enc",
+    "prior_native_confirmed": true,
+    "manual_dispatch_version": 1
+  }
+]
