@@ -1,0 +1,22 @@
+[
+  {
+    "core": 25,
+    "candidate": "core25-vectorbasis2c890e3e5ac0",
+    "challenge_id": "lean-4-verification-rh-core-pillar-25-global-stand-42a0059c",
+    "attempt": 104668,
+    "tokens": 6954104,
+    "baseline_tokens": 29435752,
+    "chars": 23887476,
+    "files": 4150,
+    "baseline_chars": 97314102,
+    "worker_size": 18626273,
+    "worker_sha": "16585fd2a847207ce32c1e882d3307fa4c8f2bfc37ec4ff38c08b8e0b9927d99",
+    "platform_size": 18626273,
+    "platform_sha": "16585fd2a847207ce32c1e882d3307fa4c8f2bfc37ec4ff38c08b8e0b9927d99",
+    "proof_id": "2c890e3e5ac0b79b5fbf7cda71cd46a0b76822cf9845ef88635b679baab857a5",
+    "cipher_sha": "24f50e6e01a0794fbc5d25915133a6cd9cf73feebd9399cba31338c12abd6d53",
+    "filename": "input.enc",
+    "prior_native_confirmed": true,
+    "manual_dispatch_version": 1
+  }
+]
