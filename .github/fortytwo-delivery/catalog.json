@@ -1,0 +1,85 @@
+[
+  {
+    "core": 28,
+    "candidate": "core28-fastprojections9ae3f54dbd",
+    "challenge_id": "lean-4-verification-rh-fast-sub-pillar-28-fundamen-7b3737ce",
+    "attempt": 102835,
+    "tokens": 299812,
+    "baseline_tokens": 920317,
+    "chars": 973762,
+    "files": 153,
+    "baseline_chars": 2996580,
+    "worker_size": 899094,
+    "worker_sha": "0cdc00d54d8b913230576145d42e4df93612f8a75b9a5301ff53b0e2d34fcb1d",
+    "platform_size": 461659,
+    "platform_sha": "ae63a39c026fe85b728d7addda8bf0c2cb39aab59c81be6e2e8eb5559d802616",
+    "proof_id": "7b6b1cd417f1601e1f7967d1c83166ce99158be8b5067cf9edabc4899faeb8ee",
+    "cipher_sha": "8a63c54170b6b87cea3240c4f6659bef140664fffc50ec6001cd704e4a8c973b",
+    "filename": "input.enc",
+    "harbor_witnesses": [
+      {
+        "attempt": 102646,
+        "files": 154,
+        "chars": 1061239
+      },
+      {
+        "attempt": 102624,
+        "files": 154,
+        "chars": 1067846
+      },
+      {
+        "attempt": 102720,
+        "files": 154,
+        "chars": 1019926
+      },
+      {
+        "attempt": 102835,
+        "files": 153,
+        "chars": 973762
+      },
+      {
+        "attempt": 102815,
+        "files": 153,
+        "chars": 995546
+      },
+      {
+        "attempt": 102563,
+        "files": 170,
+        "chars": 1215607
+      },
+      {
+        "attempt": 102529,
+        "files": 173,
+        "chars": 1281186
+      },
+      {
+        "attempt": 102602,
+        "files": 161,
+        "chars": 1095802
+      },
+      {
+        "attempt": 102547,
+        "files": 170,
+        "chars": 1228282
+      },
+      {
+        "attempt": 102579,
+        "files": 170,
+        "chars": 1193405
+      },
+      {
+        "attempt": 102518,
+        "files": 176,
+        "chars": 1313742
+      },
+      {
+        "attempt": 102588,
+        "files": 165,
+        "chars": 1130736
+      }
+    ],
+    "grader_routing_version": 1,
+    "prior_native_publish_unresolved": false,
+    "prior_arm_publish_unresolved": false
+  }
+]
