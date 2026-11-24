@@ -1,0 +1,22 @@
+[
+  {
+    "core": 22,
+    "candidate": "core22-batchprovider580e68ca0c7c",
+    "challenge_id": "lean-4-verification-rh-core-pillar-22-toroidal-com-97f2f261",
+    "attempt": 105846,
+    "tokens": 35833098,
+    "baseline_tokens": 38808445,
+    "chars": 121526501,
+    "files": 18986,
+    "baseline_chars": 131223241,
+    "worker_size": 93314082,
+    "worker_sha": "12bd988a5b63ed79a8d3ae407ab4e581ecce5dc26b6308221bd729d98875c151",
+    "platform_size": 93314082,
+    "platform_sha": "12bd988a5b63ed79a8d3ae407ab4e581ecce5dc26b6308221bd729d98875c151",
+    "proof_id": "580e68ca0c7cc062260b79d0e557d93e1c23efe1a2c3afa96ed49dde02e287e1",
+    "cipher_sha": "45595efb4e75e8d6419492e3ae7749ed9f8ffbb0c1cd04308fce699891b92871",
+    "filename": "input.enc",
+    "prior_native_confirmed": true,
+    "manual_dispatch_version": 1
+  }
+]
