@@ -1,0 +1,32 @@
+name: Fortytwo verified Playground proof delivery
+on:
+  workflow_dispatch:
+permissions: {}
+jobs:
+  deliver:
+    if: github.repository == 'vlarin/riemann-hypothesis' && github.run_attempt == 1 && github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/dev/fortytwo-proof-105667-0261fba74385-native'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    environment: fortytwo-proof-105667-0261fba74385-native
+    steps:
+      - name: Fetch the reviewed uploader at this commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP"
+          root="https://raw.githubusercontent.com/vlarin/riemann-hypothesis/$GITHUB_SHA/.github/fortytwo-delivery"
+          curl -fsS --proto '=https' --retry 5 --retry-all-errors "$root/run.py" -o run.py
+          echo '2a1dc1d0de1dd44ced95b02c22645aba89e9115722018bd3c78695523995af0c  run.py' | sha256sum -c
+          curl -fsS --proto '=https' --retry 5 --retry-all-errors "$root/deliver.py" -o deliver.py
+          echo '904961026193b04c1244aff3cf6d2a88c108dff1ded63d243dd14d52c16432ae  deliver.py' | sha256sum -c
+          curl -fsS --proto '=https' --retry 5 --retry-all-errors "$root/live_board.py" -o live_board.py
+          echo '9d163180216df477c1c404f9e541392e1eb16b103dfc39936dc88447686da79b  live_board.py' | sha256sum -c
+          curl -fsS --proto '=https' --retry 5 --retry-all-errors "$root/catalog.json" -o catalog.json
+          echo '273ddedb094ee47c83442bbc517b603c0ba0bf8ba4efb0583c69f0d669ba97c2  catalog.json' | sha256sum -c
+          curl -fsS --proto '=https' --retry 5 --retry-all-errors "$root/worker_only.py" -o worker_only.py
+          echo 'eadbb39e92f809d704ada35b21ad85e4a76d7691ad0fd0ac40d0f3c25cc9f8b4  worker_only.py' | sha256sum -c
+      - name: Check leaderboard and deliver verified proofs
+        shell: bash
+        env:
+          PLAYGROUND_RUN_INPUT: ${{ secrets.PLAYGROUND_RUN_INPUT }}
+        run: python3 -I "$RUNNER_TEMP/worker_only.py" "$RUNNER_TEMP/catalog.json"
