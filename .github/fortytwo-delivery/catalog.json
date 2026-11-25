@@ -1,0 +1,23 @@
+[
+  {
+    "core": 24,
+    "candidate": "core24-linuxwitnesses1c445c9283fc",
+    "challenge_id": "lean-4-verification-rh-core-pillar-24-direct-arake-a562f8b3",
+    "attempt": 108895,
+    "tokens": 1432501,
+    "baseline_tokens": 30828159,
+    "chars": 6079294,
+    "files": 1300,
+    "baseline_chars": 105183892,
+    "worker_size": 4983251,
+    "worker_sha": "2e024a1380560532ff97ef3dccfffaab8b09e8b592cc400d1e5cc12d1b491386",
+    "platform_size": 4983251,
+    "platform_sha": "2e024a1380560532ff97ef3dccfffaab8b09e8b592cc400d1e5cc12d1b491386",
+    "proof_id": "1c445c9283fc2524047c6f3a970bf36c467bf844c0d6b625bbefe58abf75899c",
+    "cipher_sha": "59168f7659956c1a215485855f1b73bb9e8f2f568a782c64bce762ead199b615",
+    "filename": "input.enc",
+    "prior_native_confirmed": true,
+    "manual_dispatch_version": 1,
+    "delivery_input_layout": "same-proof-v1"
+  }
+]
