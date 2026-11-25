@@ -1,0 +1,23 @@
+[
+  {
+    "core": 40,
+    "candidate": "core40-coordinates625e2933627a",
+    "challenge_id": "lean-4-verification-rh-fast-sub-pillar-40-residual-8d2f5cb3",
+    "attempt": 108155,
+    "tokens": 347,
+    "baseline_tokens": 1031987,
+    "chars": 2325,
+    "files": 1,
+    "baseline_chars": 3443866,
+    "worker_size": 13003,
+    "worker_sha": "7e6ec671a2f305cf3fdb8b3be6fe411d0caadf49789dc3ec4f607775bc9c1e3e",
+    "platform_size": 13003,
+    "platform_sha": "7e6ec671a2f305cf3fdb8b3be6fe411d0caadf49789dc3ec4f607775bc9c1e3e",
+    "proof_id": "625e2933627a6f0130bdfe9272cf15022a495b062dd16c24e0970a9bdcd1d7bd",
+    "cipher_sha": "bd3b09417de2927c6af34b76cdd5a9b18b92e88e1eb8f4c140f7dd0b4a8d2592",
+    "filename": "input.enc",
+    "prior_native_confirmed": true,
+    "manual_dispatch_version": 1,
+    "delivery_input_layout": "same-proof-v1"
+  }
+]
